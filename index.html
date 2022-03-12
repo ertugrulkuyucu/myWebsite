@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img class="left" src="ekLogo.png" alt="ek logo" width="40px">
+        <img class="right" src="code.png" alt="code logo"width="80px">
+        <h1> Ertuğrul Kuyucu </h1>
+    </header>
+
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="index.html"> Anasayfa</a></li>
+                <li> <a href="about.html"> Hakkımmda</a></li>
+                <li> <a href="services.html"> Yeteneklerim</a></li>
+                <li> <a href="services.html"> Projelerim</a></li>
+                <li> <a href="reference.html"> Referanslarım</a></li>
+                <li> <a href="contact.html"> Iletişim</a></li>
+            </ul>
+        </nav>
+   </header>
+
+    
+   <section id="showcase">
+            <div class="container">
+                
+            </div>
+   </section>
+
+       
+        <section id ="boxes">
+
+            <div class="container">
+                <div class="box">
+                    <img src="html.jpg" alt=""> 
+                    <!-- dotnet eğitimleri ile ilgili logo eklenecek -->
+                    <h3>.Net Eğitimleri</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut repellat quas, et, cumque eligendi commodi hic veniam asperiores aliquid minima corrupti voluptatibus. Numquam ducimus est laboriosam beatae nihil, repudiandae corrupti!</p>
+
+                </div>
+
+                <div class="box">
+                    <img src="html.jpg" alt=""> 
+                    <!-- dotnet eğitimleri ile ilgili logo eklenecek -->
+                    <h3>Web Eğitimleri</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut repellat quas, et, cumque eligendi commodi hic veniam asperiores aliquid minima corrupti voluptatibus. Numquam ducimus est laboriosam beatae nihil, repudiandae corrupti!</p>
+                </div>
+                <div class="box">
+                    <img src="html.jpg" alt=""> 
+                    <!-- dotnet eğitimleri ile ilgili logo eklenecek -->
+                    <h3>Sistem Eğitimleri</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut repellat quas, et, cumque eligendi commodi hic veniam asperiores aliquid minima corrupti voluptatibus. Numquam ducimus est laboriosam beatae nihil, repudiandae corrupti!</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Design by ErtugrulKuyucu.&copy;2022</p>
+        </footer>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="ekLogo.png" alt="ekLogo" height="35px"></button>
+
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+
+</body>
+</html>
