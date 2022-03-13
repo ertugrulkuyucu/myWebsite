@@ -51,7 +51,7 @@ header li{
     font-family: Roboto;
     float: left;    
     display: inline;
-    padding: 0 20px;
+    padding: 0 35px;
 }
 
 header #branding{
@@ -146,6 +146,7 @@ aside div img {
 }
 
 footer{
+    padding-bottom: 0ch;
 padding: 5px;
 margin-top: 20px;
 color: #f4f4f4;

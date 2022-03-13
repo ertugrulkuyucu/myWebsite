@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" >
 </head>
 
 <body>
@@ -18,12 +18,12 @@
     <header>
         <nav>
             <ul>
-                <li> <a href="index.html"> Anasayfa</a></li>
-                <li> <a href="about.html"> Hakkımmda</a></li>
-                <li> <a href="services.html"> Yeteneklerim</a></li>
-                <li> <a href="services.html"> Projelerim</a></li>
-                <li> <a href="reference.html"> Referanslarım</a></li>
-                <li> <a href="contact.html"> Iletişim</a></li>
+                <li> <a href="index.html"> Home</a></li>
+                <li> <a href="about.html"> About Me</a></li>
+                <li> <a href="services.html"> Skills</a></li>
+                <li> <a href="services.html"> Projects</a></li>
+                <li> <a href="reference.html"> References</a></li>
+                <li> <a href="contact.html"> Contact</a></li>
             </ul>
         </nav>
    </header>
@@ -32,12 +32,14 @@
    <section id="showcase">
             <div class="container">
                 
+                <button onclick="typeWriter()">Click me</button>
+                <p id="demo"></p>
+            
             </div>
    </section>
 
        
         <section id ="boxes">
-
             <div class="container">
                 <div class="box">
                     <img src="html.jpg" alt=""> 
@@ -87,7 +89,24 @@
               document.body.scrollTop = 0;
               document.documentElement.scrollTop = 0;
             }
+
+            var i = 0;
+            var txt = 'Merhaba! Ben Ertuğrul, websiteme hoş geldin!'; /* The text */
+            var speed = 50; /* The speed/duration of the effect in milliseconds */
+            
+            function typeWriter() {
+              if (i < txt.length) {
+                document.getElementById("demo").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+              }
+            }
+
             </script>
+
+
 
 </body>
 </html>
+
+
