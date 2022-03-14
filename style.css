@@ -15,6 +15,7 @@ ul{
     margin: 0;
     padding: 0;
 }
+
 header{
     background: #35424a;
     color: white;
@@ -36,8 +37,17 @@ header img.right{
     padding-top: 15px;
     min-height: 50px;
 }
+/* nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    } */
 header a{
     color: white;
+    padding: 7px 13px;
+    border-radius: 30px;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
@@ -45,7 +55,7 @@ header a{
 }
 header ul{
     margin: 0;
-    padding: 0;
+    padding: 0;    
 }
 header li{    
     font-family: Roboto;
@@ -65,9 +75,8 @@ header nav {
     margin-top: 10px;
 }
 
-
 header a:hover{
-    color: rgb(149, 229, 149);
+    color: white;
     font-weight: bold;
 }
 #showcase{
@@ -182,6 +191,63 @@ aside#sidebar .quote input ,aside#sidebar .quote textarea{
     padding: 5px;
 }
 
+a.active,a:hover{
+    background: #3a814a;
+    transition: .5s;
+}
+body{
+    font-family: montserrat;
+}
+
+#check{
+    display:none;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display:none;
+}
+
+.page-title{
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 35px;
+    }
+    
+    .contentFontSize {
+        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 35px;
+    }
+    
+    #myBtn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: red; /* Set a background color */
+        color: white; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 10px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+        font-size: 18px; /* Increase font size */
+    }
+    
+    #myBtn:hover {
+        background-color: #555; /* Add a dark-grey background on hover */  
+    }
+    
+
 @media screen and (max-width: 600px) 
 {
     header #branding,
@@ -213,8 +279,8 @@ aside#sidebar .quote input ,aside#sidebar .quote textarea{
         
     }
     #showcase p{
-font-size: 20px;
-color: blue;
+    font-size: 20px;
+    color: blue;
     };
     #newsletter{
         display: block;
@@ -224,38 +290,20 @@ color: blue;
         width: 50%;
         margin-bottom: 5px;
     }
+    a:hover,a.active{
+        background:none;
+        color: #7c389b;       
+    }
+    section{
+        background: url(/img/cover_back.jpg) no-repeat;
+        background-size: cover;
+        height: calc(100vh - 80px);
+     }
+     .checkbtn{
+       
+        display:block;
+    }
+    
 }
 
-.page-title{
-font-size: 25px;
-margin-top: 15px;
-margin-bottom: 15px;
-margin-left: 35px;
-}
 
-.contentFontSize {
-    font-size: 18px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 35px;
-}
-
-#myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: red; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 10px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-}
-
-#myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */  
-}
